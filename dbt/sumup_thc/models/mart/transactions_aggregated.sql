@@ -5,9 +5,8 @@
 ) }}
 
 select
-    created_at::date || '-' || status || '-' || type || '-' || country || '-' || typology as transactions_aggregated_id,
+    created_at::date || '-' || type || '-' || country || '-' || typology as transactions_aggregated_id,
     created_at::date,
-    status as transaction_status,
     type as device_type,
     country as store_country,
     typology as store_typology,
@@ -30,5 +29,5 @@ and created_at::date >= coalesce(
 {% endif %}
 
 group by
-    1,2,3,4,5,6
+    1,2,3,4,5
 
