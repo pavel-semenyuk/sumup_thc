@@ -1,0 +1,8 @@
+sources:
+  - name: raw
+    schema: raw
+    database: postgres
+    tables:
+      - name: device
+      - name: store
+      - name: transaction

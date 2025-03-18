@@ -1,0 +1,87 @@
+[0m19:01:44.166515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076bc640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ef2bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ef2470>]}
+
+
+============================== 19:01:44.169403 | 296647e2-adfa-48cd-8075-15327303df32 ==============================
+[0m19:01:44.169403 [info ] [MainThread]: Running with dbt=1.9.3
+[0m19:01:44.169769 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/semenyukpavel/PycharmProjects/sumup_thc/dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init --profile sumup-thc', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:01:54.871409 [debug] [MainThread]: Starter project path: /Users/semenyukpavel/.pyenv/versions/3.10.4/lib/python3.10/site-packages/dbt/include/starter_project
+[0m19:01:54.881905 [info ] [MainThread]: 
+Your new dbt project "sumup_thc" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:01:54.885048 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 10.770324, "process_in_blocks": "0", "process_kernel_time": 0.116241, "process_mem_max_rss": "93437952", "process_out_blocks": "0", "process_user_time": 0.752601}
+[0m19:01:54.885793 [debug] [MainThread]: Command `dbt init` succeeded at 19:01:54.885622 after 10.77 seconds
+[0m19:01:54.886327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076bc640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e85ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ef34c0>]}
+[0m19:01:54.886859 [debug] [MainThread]: Flushing usage events
+[0m19:01:55.450657 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:17:26.645322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d34610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ba6920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ba61d0>]}
+
+
+============================== 19:17:26.648150 | 33892720-72a3-4c0e-b511-c28b54fdf2e5 ==============================
+[0m19:17:26.648150 [info ] [MainThread]: Running with dbt=1.9.3
+[0m19:17:26.648515 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/semenyukpavel/PycharmProjects/sumup_thc/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:17:26.658896 [info ] [MainThread]: dbt version: 1.9.3
+[0m19:17:26.659190 [info ] [MainThread]: python version: 3.10.4
+[0m19:17:26.659376 [info ] [MainThread]: python path: /Users/semenyukpavel/.pyenv/versions/3.10.4/bin/python
+[0m19:17:26.659551 [info ] [MainThread]: os info: macOS-14.1-arm64-arm-64bit
+[0m19:17:27.184732 [info ] [MainThread]: Using profiles dir at /Users/semenyukpavel/PycharmProjects/sumup_thc/dbt
+[0m19:17:27.185186 [info ] [MainThread]: Using profiles.yml file at /Users/semenyukpavel/PycharmProjects/sumup_thc/dbt/profiles.yml
+[0m19:17:27.185477 [info ] [MainThread]: Using dbt_project.yml file at /Users/semenyukpavel/PycharmProjects/sumup_thc/dbt/dbt_project.yml
+[0m19:17:27.186186 [info ] [MainThread]: adapter type: postgres
+[0m19:17:27.186490 [info ] [MainThread]: adapter version: 1.9.0
+[0m19:17:27.186745 [info ] [MainThread]: Configuration:
+[0m19:17:27.186977 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:17:27.187203 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:17:27.187418 [info ] [MainThread]: Required dependencies:
+[0m19:17:27.187680 [debug] [MainThread]: Executing "git --help"
+[0m19:17:27.205469 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:17:27.206108 [debug] [MainThread]: STDERR: "b''"
+[0m19:17:27.206365 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:17:27.206607 [info ] [MainThread]: Connection:
+[0m19:17:27.206852 [info ] [MainThread]:   host: localhost
+[0m19:17:27.207042 [info ] [MainThread]:   port: 5432
+[0m19:17:27.207225 [info ] [MainThread]:   user: postgres
+[0m19:17:27.207405 [info ] [MainThread]:   database: postgres
+[0m19:17:27.207585 [info ] [MainThread]:   schema: staging
+[0m19:17:27.207762 [info ] [MainThread]:   connect_timeout: 10
+[0m19:17:27.207945 [info ] [MainThread]:   role: None
+[0m19:17:27.208141 [info ] [MainThread]:   search_path: None
+[0m19:17:27.208319 [info ] [MainThread]:   keepalives_idle: 0
+[0m19:17:27.208498 [info ] [MainThread]:   sslmode: None
+[0m19:17:27.208675 [info ] [MainThread]:   sslcert: None
+[0m19:17:27.208852 [info ] [MainThread]:   sslkey: None
+[0m19:17:27.209239 [info ] [MainThread]:   sslrootcert: None
+[0m19:17:27.209583 [info ] [MainThread]:   application_name: dbt
+[0m19:17:27.209820 [info ] [MainThread]:   retries: 1
+[0m19:17:27.210289 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m19:17:27.429568 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m19:17:27.467047 [debug] [MainThread]: Using postgres connection "debug"
+[0m19:17:27.467310 [debug] [MainThread]: On debug: select 1 as id
+[0m19:17:27.467478 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:17:27.613919 [debug] [MainThread]: SQL status: SELECT 1 in 0.146 seconds
+[0m19:17:27.615159 [debug] [MainThread]: On debug: Close
+[0m19:17:27.615585 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:17:27.615984 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:17:27.616430 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/semenyukpavel/PycharmProjects/sumup_thc/dbt/dbt_project.yml> not found
+
+[0m19:17:27.618635 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.0259312, "process_in_blocks": "0", "process_kernel_time": 0.153088, "process_mem_max_rss": "110313472", "process_out_blocks": "0", "process_user_time": 0.884113}
+[0m19:17:27.619152 [debug] [MainThread]: Command `dbt debug` failed at 19:17:27.619043 after 1.03 seconds
+[0m19:17:27.619530 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:17:27.619897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d34610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070f80d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070f8700>]}
+[0m19:17:27.620327 [debug] [MainThread]: Flushing usage events
+[0m19:17:28.120121 [debug] [MainThread]: An error was encountered while trying to flush usage events

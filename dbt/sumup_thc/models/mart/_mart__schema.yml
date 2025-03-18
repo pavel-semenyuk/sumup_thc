@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: transactions_aggregated
+    columns:
+      - name: transactions_aggregated_id
+        data_tests:
+          - not_null
+          - unique
+  - name: products_aggregated
+    columns:
+      - name: products_aggregated_id
+        data_tests:
+          - not_null
+          - unique
+  - name: stores_aggregated
+    columns:
+      - name: stores_aggregated_id
+        data_tests:
+          - not_null
+          - unique
+  - name: top_10_stores
+  - name: top_10_products
+  - name: avg_transacted_amount
+  - name: transaction_percentage
+  - name: avg_5_transaction_time

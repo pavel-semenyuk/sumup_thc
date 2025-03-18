@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: staging_sumup__device
+    columns:
+      - name: id
+        data_tests:
+          - unique
+          - not_null
+      - name: type
+        data_tests:
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+  - name: staging_sumup__store
+    columns:
+      - name: id
+        data_tests:
+          - unique
+          - not_null
+  - name: staging_sumup__transaction
+    columns:
+      - name: id
+        data_tests:
+          - unique
+          - not_null
+      - name: device_id
+        data_tests:
+          - not_null
+      - name: status
+        data_tests:
+          - accepted_values:
+              values: ['accepted', 'cancelled', 'refused']
