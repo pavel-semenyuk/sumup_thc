@@ -1,10 +1,12 @@
 # SumUp Take Home Challenge
 This repository contains an ETL pipeline to load transaction, device and store data to a PostgreSQL database to answer the following questions:
-- Top 10 stores per transacted amount
-- Top 10 products sold
-- Average transacted amount per store typology and country
-- Percentage of transactions per device type
-- Average time for a store to perform its 5 first transactions
+- Top 10 stores per transacted amount (`dbt/sumup_thc/models/mart/top_10_stores.sql`)
+- Top 10 products sold (`dbt/sumup_thc/models/mart/top_10_products.sql`)
+- Average transacted amount per store typology and country (`dbt/sumup_thc/models/mart/avg_transacted_amount.sql`)
+- Percentage of transactions per device type (`dbt/sumup_thc/models/mart/transaction_percentage.sql`)
+- Average time for a store to perform its 5 first transactions (`dbt/sumup_thc/models/mart/avg_5_transaction_time.sql`)
+
+The results in `csv` format can be found in `result_csv` folder in the repository.
 
 ### Prerequisites
 To install dependencies, run `pip install -r requirements.txt`. 
