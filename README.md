@@ -30,7 +30,7 @@ The resulting database consists of 4 schemas:
 - dbt models have tests for not-null and uniqueness of primary keys, as well as accepted values tests for fields that can only be equal to a small number of values.
 
 ### Assumptions
-- In the metrics only `accepted` transactions are accounted for.
+- In the metrics only `accepted` transactions are accounted for, in the ranking of stores and products the main metric is transacted amount.
 - Amounts for all the stores are in the same currency.
 - Device and store data is slowly-changing, and each record has validity. This is implemented with the help of `dbt snapshots`.
 - The incoming data can have millions of records per day. In order to calculate metrics faster, aggregate tables are used.
